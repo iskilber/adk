@@ -1,0 +1,28 @@
+{
+  "name": "@adk/react-di",
+  "description": "React context based dependency injection proposal",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iskilber/adk.git"
+  },
+  "keywords": [
+    "React",
+    "dependency",
+    "injection"
+  ],
+  "author": "iskilber@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iskilber/adk/issues"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.5",
+    "reflect-metadata": "^0.1.13"
+  },
+  "homepage": "https://github.com/iskilber/adk#readme"
+}
