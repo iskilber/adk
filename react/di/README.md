@@ -1,6 +1,55 @@
 # @adk/react-di
 
-React context based dependency injection proposal
+React context based dependency injection proposal. 
+
+The idea is to create an `Injector` container as `React.context` value available
+in all children of a `provider component`. The `Injector` container can hold
+any number of `values`, `singltons`, `factories` under custom tokens. So those
+stored types can be accessed anywhere in child component tree.
+
+If another `InjectorProvider` component appears inside that child component tree,
+new `Injector` is spawned with previous one as parent.
+
+`Injector` contained types can be accessed by hook `useInject`. And new types
+can be dynamically provided into existing injector at any time by `useProvide`.
+But the best moment to declare dependecy types is, when creating new custom 
+`InjectorProvider` component.
+
+### Custom InjectorProvider component
+
+```tsx
+export const ProductsProvider: React.FC<ProductsProviderProps> = (props) => {
+  const providers = [
+    { provide: ProductListFilters, useValue: new BehaviorSubject({}) },
+    ProductListDao,
+    { provide: PRODUCTS_BASE_URL, useValue: props.productBaseUrl },
+    ProductsClient
+  ];
+
+  return (
+    <InjectorProvider providers={providers}>
+      {props.children}
+    </InjectorProvider>
+  );
+}
+
+```
+
+### Use inside of component:
+```tsx
+export const ProductList: React.FC<ProductListProps> = (props) => {
+  const productListDao = useInject<ProductListDao>(ProductListDao);
+  const [ loading ] = useState$(productListDao.fetching, productListDao.fetching$);
+  const [ productList ] = useState$(productListDao.data, productLsitDao.data$);
+
+  return (
+    <ProductListView productList={productList} loadong={loading}>
+  )
+}
+```
+
+
+## Usage
 
 
 

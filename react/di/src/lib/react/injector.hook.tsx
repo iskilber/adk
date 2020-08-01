@@ -26,3 +26,12 @@ export function useInject<D>(...injectionTokens: any[]): D {
     resolvedRef.current[0] :
     resolvedRef.current;
 }
+
+export function useProvide(providerOrConfig: any) {
+  const injector = useInjector();
+  const isProvidedRef = React.useRef(false);
+  if (!isProvidedRef.current) {
+    isProvidedRef.current = true;
+    injector.use(providerOrConfig);
+  }
+}
