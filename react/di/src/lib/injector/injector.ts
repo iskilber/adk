@@ -12,7 +12,7 @@ import {
   ProviderConfig
   } from './injector.types';
 import {
-  Provider, ClassProvider, ValueProvider, FactoryProvider,
+  Provider, ClassProvider, ValueProvider, FactoryProvider, ExistingProvider,
   } from '../providers';
 
 export class Injector {
@@ -40,6 +40,8 @@ export class Injector {
         provider = ValueProvider.fromConfig(providerOrAny);
       } else if (FactoryProvider.isConfig(providerOrAny)) {
         provider = FactoryProvider.fromConfig(providerOrAny);
+      } else if (ExistingProvider.isConfig(providerOrAny)) {
+        provider = ExistingProvider.fromConfig(providerOrAny);
       } else {
         provider = new ClassProvider(providerOrAny, providerOrAny);
       }

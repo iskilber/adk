@@ -23,7 +23,7 @@ export interface FactoryProviderConfig {
 
 export interface ExistingProviderConfig {
   provide: any;
-  existing: any;
+  useExisting: any;
   multi?: any;
 }
 
