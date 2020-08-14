@@ -48,6 +48,25 @@ export const ProductList: React.FC<ProductListProps> = (props) => {
 }
 ```
 
+### Decorators (Inject, Injectable)
+
+#### Injectable
+```tsx
+
+@Injectable()
+export class MyCustomService {}
+```
+#### Inject
+```tsx
+
+export class MyCustomService {
+
+  constructor(
+    @Inject(CUSTOM_TOKEN)
+    myCustomValue: MyCustomType
+  ) {}
+}
+```
 
 ## Usage
 
