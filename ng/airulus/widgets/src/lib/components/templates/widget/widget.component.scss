@@ -1,0 +1,26 @@
+:host {
+  display: block;
+
+  .header-container {
+    --svg-icon-size: var(--widget-header-icon-size);
+    --svg-icon-color: var(--widget-header-color);
+    background: var(--widget-header-background);
+    color: var(--widget-header-color);
+    height: 48px;
+    display: grid;
+    grid-template-columns: 32px auto auto;
+    column-gap: 24px;
+    align-items: center;
+    padding: 0 24px;
+  }
+  .header-controls-container {
+    --svg-icon-size: var(--widget-header-controls-size);
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 12px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+}

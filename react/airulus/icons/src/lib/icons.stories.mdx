@@ -1,0 +1,102 @@
+import { Meta, Story, Canvas, Props, IconGallery, IconItem } from '@storybook/addon-docs/blocks';
+import { Text } from '@iskil/web/react/ui/typography';
+import { DessertIcon, FoodAndWineIcon, SaladIcon, SoupPlateIcon, WholeFishIcon } from './food';
+import { 
+  MediumIconsIcon, 
+  LoadingSignIcon, 
+  SwitchIcon, 
+  ListIcon, 
+  ThumbnailsIcon 
+} from './user-interface';
+import {
+  DocumentIcon,
+  OpenFolderIcon,
+  PdfExportIcon,
+  FolderIcon,
+  ImageFileIcon,
+  VideoFileIcon,
+  FolderAddIcon,
+  DocumentAddIcon
+} from './files';
+import {
+  BasicArrowIcon
+} from './arrows'
+import {
+  TvShowIcon
+} from './tv-and-radio';
+import { 
+  XBoxCrossIcon
+} from './gaming';
+import { WorkstationIcon } from './hardware';
+import { CloudIcon, UploadToCloudIcon } from './network';
+
+<Meta title="UI/Icons/main" />
+
+# Icons
+
+
+## Food
+<IconGallery>
+  <IconItem name="DessertIcon"><DessertIcon /></IconItem>
+  <IconItem name="FoodAndWineIcon"><FoodAndWineIcon /></IconItem>
+  <IconItem name="SaladIcon"><SaladIcon /></IconItem>
+  <IconItem name="SoupPlateIcon"><SoupPlateIcon /></IconItem>
+  <IconItem name="WholeFishIcon"><WholeFishIcon /></IconItem>
+</IconGallery>
+
+
+## User Interface
+<IconGallery>
+  <IconItem name="MediumIconsIcon"><MediumIconsIcon /></IconItem>
+  <IconItem name="LoadingSignIcon"><LoadingSignIcon /></IconItem>
+  <IconItem name="SwitchIcon"><SwitchIcon state="off" /></IconItem>
+  <IconItem name="SwitchIcon"><SwitchIcon state="on" /></IconItem>
+  <IconItem name="ListIcon"><ListIcon /></IconItem>
+  <IconItem name="ThumbnailsIcon"><ThumbnailsIcon /></IconItem>
+</IconGallery>
+
+## Files & Folders
+<IconGallery>
+  <IconItem name="FolderIcon"><FolderIcon /></IconItem>
+  <IconItem name="OpenFolderIcon"><OpenFolderIcon /></IconItem>
+  <IconItem name="FolderAddIcon"><FolderAddIcon /></IconItem>
+  <IconItem name="DocumentIcon"><DocumentIcon /></IconItem>
+  <IconItem name="DocumentAddIcon"><DocumentAddIcon /></IconItem>
+  <IconItem name="PdfExportIcon"><PdfExportIcon /></IconItem>
+  <IconItem name="ImageFileIcon"><ImageFileIcon /></IconItem>
+  <IconItem name="VideoFileIcon"><VideoFileIcon /></IconItem>
+</IconGallery>
+
+## Arrows
+<IconGallery>
+  <IconItem name="BasicArrowIcon"><BasicArrowIcon /></IconItem>
+  <IconItem name="BasicArrowIcon"><BasicArrowIcon rotate="top" /></IconItem>
+  <IconItem name="BasicArrowIcon"><BasicArrowIcon rotate="left" /></IconItem>
+  <IconItem name="BasicArrowIcon"><BasicArrowIcon rotate="right" /></IconItem>
+</IconGallery>
+
+## Tv & Radios
+<IconGallery>
+  <IconItem name="TvShowIcon"><TvShowIcon /></IconItem>
+  <IconItem name="TvShowIcon"><TvShowIcon viewType="filled" /></IconItem>
+</IconGallery>
+
+## Gaming
+<IconGallery>
+  <IconItem name="XBoxCrossIcon"><XBoxCrossIcon /></IconItem>
+  <IconItem name="XBoxCrossIcon"><XBoxCrossIcon viewType="filled" /></IconItem>
+</IconGallery>
+
+## Hardware
+<IconGallery>
+  <IconItem name="WorkstationIcon"><WorkstationIcon /></IconItem>
+  <IconItem name="WorkstationIcon"><WorkstationIcon viewType="filled" /></IconItem>
+</IconGallery>
+
+## Network
+<IconGallery>
+  <IconItem name="CloudIcon"><CloudIcon /></IconItem>
+  <IconItem name="CloudIcon"><CloudIcon viewType="filled" /></IconItem>
+  <IconItem name="UploadToCloudIcon"><UploadToCloudIcon /></IconItem>
+  <IconItem name="UploadToCloudIcon"><UploadToCloudIcon viewType="filled" /></IconItem>
+</IconGallery>

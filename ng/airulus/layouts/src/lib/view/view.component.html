@@ -1,0 +1,9 @@
+<div 
+  class="view"
+  [class.horizontal-centered]="contentHorizontalPosition === 'centered'"
+  [class.horizontal-right]="contentHorizontalPosition === 'right'"
+  [class.vertical-centered]="contentVerticalPosition === 'centered'"
+  [class.vertical-bottom]="contentVerticalPosition === 'bottom'"
+>
+  <ng-content></ng-content>
+</div>

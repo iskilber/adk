@@ -1,0 +1,18 @@
+<ng-template #textInputContainer>
+  <adk-text-input-container
+    [disabled]="disabled$ | async"
+    [value]="value"
+    (change)="handleChange($event.target.value)"
+    (focus)="onFocus()"
+    (inputReset)="control.reset()"
+  ></adk-text-input-container>
+</ng-template>
+
+
+<adk-input-field
+  [label]="label"
+  [required]="required"
+  [inputContainerTemplate]="textInputContainer"
+>
+
+</adk-input-field>

@@ -1,0 +1,11 @@
+<svg 
+  [attr.fill]="color"
+  viewBox="0 0 50 50"
+  [attr.width]="size"
+  class="svg-icon"
+  [class.spinner]="spin"
+  [class.cta]="cta"
+>
+  <title *ngIf="title">{{ title }}</title>
+  <ng-content></ng-content>
+</svg>

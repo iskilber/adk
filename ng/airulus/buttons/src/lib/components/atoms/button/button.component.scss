@@ -1,0 +1,71 @@
+:host {
+  border-width: 0;
+  font-family: 'ubuntu';
+  font-size: 16px;
+  padding: 0 24px;
+  line-height: 30px;
+  text-align: center;
+  outline: 0;
+  transition: 
+    background 0.15s ease-in-out,
+    color 0.15s ease-in-out;
+
+  &.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background: var(--button-disabled-background);
+    border-left: 5px solid var(--button-disabled-background);
+    border-right: 5px solid var(--button-disabled-background);
+    color: var(--button-disabled-color);
+  }
+  &:not(.disabled) {
+    cursor: pointer;
+  }
+ 
+  &[adk-button] {
+    font-weight: 300;
+    background: var(--basic-button-background-idle);
+    border-left: 5px solid var(--basic-button-background-idle);
+    border-right: 5px solid var(--basic-button-background-idle);
+
+    &:hover {
+      background: var(--basic-button-background-hover);
+      border-left: 5px solid var(--basic-button-background-hover);
+      border-right: 5px solid var(--basic-button-background-hover);
+    }
+
+    &:focus {
+      border-left: 5px solid var(--basic-button-background-active);
+      border-right: 5px solid var(--basic-button-background-active);
+    }
+
+    &:active {
+      background: var(--basic-button-background-active);
+    }
+  }
+
+  &[adk-primary-button] {
+    font-weight: 600;
+    &:not(.disabled) {
+      background: var(--primary-button-background-idle);
+      border-left: 5px solid var(--primary-button-background-idle);
+      border-right: 5px solid var(--primary-button-background-idle);
+      color: var(--primary-button-icon-color);
+    }
+    
+    &:hover:not(.disabled) {
+      background: var(--primary-button-background-hover);
+      border-left: 5px solid var(--primary-button-background-hover);
+      border-right: 5px solid var(--primary-button-background-hover);
+    }
+
+    &:focus:not(.disabled) {
+      border-left: 5px solid var(--primary-button-background-active);
+      border-right: 5px solid var(--primary-button-background-active);
+    }
+
+    &:active:not(.disabled) {
+      background: var(--primary-button-background-active);
+    }
+  }
+}

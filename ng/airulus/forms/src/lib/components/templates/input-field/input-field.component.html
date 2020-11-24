@@ -1,0 +1,21 @@
+<ng-template #defaultLabelTemplate 
+  let-label="label" 
+  let-required="required"
+  let-error="error"
+>
+  <adk-text-label 
+    [required]="required"
+    [error]="error"
+  >
+    {{ label }}
+  </adk-text-label>
+</ng-template>
+
+
+<div class="label-container" 
+  *ngTemplateOutlet="labelTemplate ? labelTemplate : defaultLabelTemplate;context:labelCtx"
+></div>
+<div class="input-container"
+  *ngTemplateOutlet="inputContainerTemplate;context:inputContainerCtx"
+></div>
+<div class="hints-container"></div>

@@ -1,0 +1,18 @@
+<adk-input-container 
+  [adkInputDisabled]="disabled">
+
+  <input 
+    type="text" 
+    role="input"
+    class="input-reset"
+    [value]="value"
+    [disabled]="disabled"
+  />
+  <div role="after" class="after">
+    <adk-multiply-icon
+      viewType="filled"
+      [cta]="true"
+      (click)="inputReset.next()"
+    ></adk-multiply-icon>
+  </div>
+</adk-input-container>

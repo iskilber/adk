@@ -1,0 +1,14 @@
+<adk-error-icon
+  class="message-icon"
+  viewType="filled"
+></adk-error-icon>
+
+<ng-content></ng-content>
+
+<adk-multiply-icon
+  *ngIf="cancellable"
+  viewType="filled"
+  class="hide-icon"
+  [cta]="true"
+  (click)="hide.next()"
+></adk-multiply-icon>

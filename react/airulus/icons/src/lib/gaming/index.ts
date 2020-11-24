@@ -1,0 +1,1 @@
+export * from './xbox-cross/xbox-cross.icon';

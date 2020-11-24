@@ -1,0 +1,39 @@
+<ng-template #defaultResetTemplate 
+  let-label="label"
+  let-disabled="disabled"
+  let-pending="pending"
+>
+  <button
+    adk-button
+    type="reset"
+    name="reset"
+    [disabled]="disabled"
+    [pending]="pending"
+  >
+    {{ label }}
+  </button>
+</ng-template>
+
+<ng-template #defaultSubmitTemplate 
+  let-label="label"
+  let-disabled="disabled"
+  let-pending="pending"
+>
+  <button
+    adk-primary-button
+    type="submit"
+    name="submit"
+    [disabled]="disabled"
+    [pending]="pending"
+  >
+    {{ label }}
+  </button>
+</ng-template>
+
+
+<ng-container 
+  *ngTemplateOutlet="resetButtonTemplate || defaultResetTemplate;context:resetButtonCtx"></ng-container>
+
+<ng-container 
+  *ngTemplateOutlet="submitButtonTemplate || defaultSubmitTemplate;context:submitButtonCtx"></ng-container>
+

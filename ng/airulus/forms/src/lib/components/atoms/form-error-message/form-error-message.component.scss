@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  background: #da3f3f;
+  line-height: 24px;
+  height: 24px;
+  padding: 0 24px;
+  color: var(--color-grey-ultra-light);
+  font-family: 'ubuntu';
+  font-weight: 400;
+
+  display: grid;
+  grid-template-columns: 18px auto 18px;
+  column-gap: 12px;
+  align-items: center;
+
+  --svg-icon-color: var(--color-grey-ultra-light);
+  --svg-icon-size: 18px;
+
+  .message-icon {
+    height: 18px;
+  }
+
+  .hide-icon {
+    height: 18px;
+  }
+}

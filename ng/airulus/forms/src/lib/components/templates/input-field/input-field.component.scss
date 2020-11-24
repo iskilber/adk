@@ -1,0 +1,20 @@
+:host {
+  display: grid;
+  grid-template-areas: 
+    'label input'
+    'empty hints';
+  grid-template-columns: var(--input-field-label-width) auto;
+  grid-template-rows: 28px 24px;
+
+  .label-container {
+    grid-area: label;
+  }
+
+  .input-container {
+    grid-area: input;
+  }
+
+  .hints-container {
+    grid-area: hints;
+  }
+}

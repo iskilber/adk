@@ -1,0 +1,21 @@
+.view {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontalCentered {
+  justify-content: center;
+}
+
+.horizontalRight {
+  justify-content: right;
+}
+
+.verticalBottom {
+  align-items: flex-end;
+}
+
+.verticalCentered {
+  align-items: center;
+}

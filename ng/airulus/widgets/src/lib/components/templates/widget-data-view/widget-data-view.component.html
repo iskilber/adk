@@ -1,0 +1,25 @@
+
+<ng-template #defaultErrorPanel 
+  let-error="error"
+  let-message="message"
+>
+  <adk-widget-error-panel>
+    {{ message }}
+  </adk-widget-error-panel>
+</ng-template>
+
+<ng-template #widgetDataView>
+  <ng-container *ngIf="error && !pending">
+    <ng-container 
+      *ngTemplateOutlet="defaultErrorPanel || errorPanel;context:errorCtx"></ng-container>
+  </ng-container>
+  
+  <ng-container *ngIf="!error && !pending && !empty">
+    <ng-container *ngTemplateOutlet="view"></ng-container>
+  </ng-container >
+</ng-template>
+
+<adk-widget-view 
+  [viewName]="viewName"
+  [view]="widgetDataView"
+></adk-widget-view>

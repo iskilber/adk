@@ -1,0 +1,19 @@
+:host {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  --svg-icon-size: 48px;
+  --svg-icon-color: #f3f3f3;
+
+  .message {
+    font-family: 'ubuntu';
+    font-weight: 500;
+    color: #f3f3f3;
+    padding: 12px;
+    font-size: 16px;
+  }
+}

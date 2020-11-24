@@ -1,0 +1,13 @@
+<svg-icon
+  [title]="title"
+  [color]="color"
+  [size]="size"
+  [cta]="cta"
+>
+  <svg:path 
+    *ngIf="viewType === 'standard'"
+    d="M 24 9 L 24 24 L 9 24 L 9 26 L 24 26 L 24 41 L 26 41 L 26 26 L 41 26 L 41 24 L 26 24 L 26 9 Z" />
+  <svg:path 
+    *ngIf="viewType === 'filled'"
+    d="M 23 9 L 23 23 L 9 23 L 9 27 L 23 27 L 23 41 L 27 41 L 27 27 L 41 27 L 41 23 L 27 23 L 27 9 Z"/>
+</svg-icon>

@@ -1,0 +1,40 @@
+.airulus-dark-theme {
+  --airulus-color-grey-dark:            #616161;
+  --airulus-color-grey:                 #999999;
+  --airulus-color-grey-light:           #b7b7b7;
+  --airulus-color-grey-ultra-light:     #f1f1f1;
+
+  --airulus-color-red:                  #ef3c2e;
+  --airulus-color-red-dark:             #b95d5d;
+  --airulus-color-red-dark-ii:          #884141;
+  --airulus-color-red-dark-iii:         #6d2929;
+  --airulus-color-red-light-grey:       #d4c7c6;
+
+  --airulus-color-green:                #62a93d;
+  --airulus-color-green-dark:           #638651;
+  --airulus-color-green-dark-ii:        #325421;
+  --airulus-color-green-light-grey:     #c3d4bb;
+  --airulus-color-red-light:            #d68787;
+
+  --airulus-color-blue:                 rgb(0, 103, 177);
+  --airulus-color-blue-navy:            #586888;
+  --airulus-color-blue-navy-dark:       rgb(59, 71, 97);
+  --airulus-color-blue-navy-extra-dark: rgb(38, 48, 68);
+  --airulus-color-blue-light:           #919cb1;
+  --airulus-color-blue-extra-light:     #e7ebf3;
+  --airulus-color-blue-ultra-light:     #f9fafd;
+  --airulus-color-blue-dark:            rgb(1, 35, 59);
+
+  --airulus-color-green-extra-light:#e1f1d8;
+  --airulus-color-green-dark:       #7b9a6a;
+
+  --airulus-color-activity: var(--airulus-color-blue);
+  --airulus-color-placeholder: var(--airulus-color-grey);
+
+  --airulus-font-family: roboto;
+  --airulus-text-primary-color: var(--airulus-color-grey-dark);
+  --airulus-text-error-color: var(--airulus-color-red);
+
+
+  --app-background: 
+}

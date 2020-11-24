@@ -1,0 +1,16 @@
+<adk-card>
+  <header class="header-container">
+    <div>
+      <ng-content select="[role=icon]"></ng-content>
+    </div>
+    <h3 class="heading">
+      <ng-content select="[role=heading]"></ng-content>
+    </h3>
+    <div class="header-controls-container">
+      <ng-content select="[role=controls]"></ng-content>
+    </div>
+  </header>
+  <section class="content-container">
+    <ng-content select="[role=content]"></ng-content>
+  </section>
+</adk-card>

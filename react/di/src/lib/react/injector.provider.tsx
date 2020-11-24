@@ -28,38 +28,36 @@ export type InjectorProviderComponent = React.FC<InjectorProviderProps>;
 export const InjectorProvider: InjectorProviderComponent = (props) => {
   // Fetch for parent InjectorProvider container to chain on it.
   const parent = React.useContext(InjectorContext);
-  const injector = React.useRef<Injector | undefined>(undefined);
-  let initializedRef = React.useRef(false);
+  const [injector, setInjector ] = React.useState(null);
 
-  if (!injector.current) {
-    injector.current = 
-        new Injector(parent && !props.skipParent ? parent : undefined);
-
+  React.useEffect(() => {
+    const injector = 
+      new Injector(parent && !props.skipParent ? parent : undefined);
+  
     if (props.providers) {
       if (typeof props.providers === 'function') {
-        injector.current.use(props.providers(injector.current));
+        injector.use(props.providers(injector));
       } else {
-        injector.current.use(props.providers);
+        injector.use(props.providers);
       }
     }
-  }
 
-  if (!initializedRef.current) {
-    initializedRef.current = true;
     if (props.initTasks) {
       props.initTasks.forEach((initHandler) => {
         const deps = (initHandler.deps || []).map(
-              (depType) => injector.current.get(depType));
+              (depType) => injector.get(depType));
         Reflect.apply(initHandler.handler, this, deps);
       });
     }
-  }
+    setInjector(injector);
+  }, []);
 
-  return (
-    <InjectorContext.Provider value={injector.current}>
+
+  return injector ? (
+    <InjectorContext.Provider value={injector}>
       {props.children}
     </InjectorContext.Provider>
-  );
+  ) : null;
 }
 
 InjectorProvider.displayName = 'InjectorProvider';

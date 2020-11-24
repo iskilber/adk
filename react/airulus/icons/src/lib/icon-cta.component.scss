@@ -1,0 +1,12 @@
+.cta {
+  min-width: var(--cta-icon--tile-min-size);
+  min-height: var(--cta-icon--tile-min-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 75%;
+    height: 75%;
+  }
+}

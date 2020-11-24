@@ -1,0 +1,10 @@
+{
+  "extends": "../../../../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "adk", "camelCase"],
+    "component-selector": [true, "element", "adk", "kebab-case"]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
+  }
+}
