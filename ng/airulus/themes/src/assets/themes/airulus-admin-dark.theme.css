@@ -1,0 +1,40 @@
+.airulus-admin-dark {
+  --arl-color-blue-dark: #1f242c;
+  --arl-color-grey-dark: #353c45;
+  --arl-color-blue-grey: #2a313b;
+  --arl-color-green-dark: #6d9a5c;
+
+  --arl-base-font-family: 'ubuntu';
+  --arl-base-font-size: 14px;
+  --arl-base-text-color:#474d55;
+
+  --arl-cta-color-hover: #e6e6e6;
+  --arl-cta-color-active: #fafafa;
+  --arl-svg-icon-color: var(--arl-base-text-color);
+  --arl-svg-icon-size: 24px;
+
+  --arl-base-background: var(--arl-color-blue-grey);
+  --arl-login-background: var(--arl-color-blue-dark);
+
+  --arl-sidebar-background: var(--arl-color-blue-dark);
+  --arl-sidebar-icon-size: 48px;
+  --arl-sidebar-item-active-background: var(--arl-color-green-dark);
+  --arl-sidebar-border-active-color: #7cba63;
+  --arl-sidebar-max-width: 200px;
+  --arl-sidebar-min-width: 48px;
+  --arl-sidebar-expand-label-color: --arl-base-text-color;
+
+  --arl-card-background: var(--arl-color-blue-dark);
+
+  --arl-widget-header-background: var(--arl-color-blue-dark);
+  --arl-widget-header-font-size: 18px;
+  --arl-widget-header-font-weight: 400;
+
+  --arl-menu-background-color: var(--arl-color-blue-dark);
+  --arl-app-sidebar-background-color: var(--arl-color-green-dark);
+
+
+  color: var(--arl-base-text-color);
+  font-family: var(--arl-base-font-family);
+  font-size: var(--arl-base-font-size);
+}

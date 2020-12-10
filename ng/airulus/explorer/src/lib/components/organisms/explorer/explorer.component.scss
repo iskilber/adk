@@ -1,0 +1,27 @@
+:host {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-areas: 
+    'topbar topbar'
+    'sidebar content'
+  ;
+  grid-template-rows: 48px  calc(100% - 48px);
+  grid-template-columns: 200px auto;
+  overflow: hidden;
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .topbar {
+    grid-area: topbar;
+  }
+
+  .content {
+    grid-area: content;
+    background: #2a313b;
+    position: relative;
+  }
+}

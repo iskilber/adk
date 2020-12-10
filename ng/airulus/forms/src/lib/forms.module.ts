@@ -1,4 +1,5 @@
 import { AirulusButtonsModule } from '@adk/ng/airulus/buttons';
+import { AirulusFileDropModule } from './modules/file-drop';
 import { AirulusIconsModule } from '@adk/ng/airulus/icons';
 import { CommonModule } from '@angular/common';
 import { COMPONENTS } from './components';
@@ -15,11 +16,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     ReactiveFormsModule,
     AirulusIconsModule,
-    AirulusButtonsModule
+    AirulusButtonsModule,
+    AirulusFileDropModule,
   ],
   exports: [
     ...COMPONENTS,
-    ...DIRECTIVES
+    ...DIRECTIVES,
+    AirulusFileDropModule
   ],
   providers: [],
 })

@@ -6,10 +6,10 @@ import {
 import { SvgIconComponent } from '../../core';
 
 @Component({
-  selector: 'adk-mind-map-icon',
+  selector: 'arl-min-map-icon',
   templateUrl: './mind-map-icon.component.svg'
 })
-export class AdkMindMapIconComponent extends SvgIconComponent {
+export class AirulusMindMapIconComponent extends SvgIconComponent {
   @Input()
   public viewType: 'filled' | 'standard' = 'standard'
 }

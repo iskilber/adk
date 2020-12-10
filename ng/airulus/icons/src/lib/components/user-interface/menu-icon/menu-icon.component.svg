@@ -1,0 +1,15 @@
+<svg-icon
+  [title]="title"
+  [color]="color"
+  [size]="size"
+  [spin]="spin"
+  [cta]="cta"
+>
+  <svg:path 
+    *ngIf="viewType === 'standard'"
+    d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" />
+  <svg:path 
+    *ngIf="viewType === 'filled'"
+    [class.spinner]="spin"
+    d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/>
+</svg-icon>

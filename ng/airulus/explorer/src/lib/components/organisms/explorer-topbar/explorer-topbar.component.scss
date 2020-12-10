@@ -1,0 +1,8 @@
+:host {
+  display: grid;
+  grid-template-columns: 200px auto 100px;
+
+  .view-controls {
+    justify-self: end;
+  }
+}

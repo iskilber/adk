@@ -5,7 +5,7 @@ import {
 import { SvgIconComponent } from '../../core';
 
 @Component({
-  selector: 'adk-plus-icon',
+  selector: 'arl-plus-icon',
   templateUrl: './plus-icon.component.svg'
 })
 export class PlusIconComponent extends SvgIconComponent {

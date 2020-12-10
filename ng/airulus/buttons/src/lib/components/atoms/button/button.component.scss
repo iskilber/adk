@@ -22,7 +22,7 @@
     cursor: pointer;
   }
  
-  &[adk-button] {
+  &[arl-button] {
     font-weight: 300;
     background: var(--basic-button-background-idle);
     border-left: 5px solid var(--basic-button-background-idle);
@@ -44,7 +44,7 @@
     }
   }
 
-  &[adk-primary-button] {
+  &[arl-primary-button] {
     font-weight: 600;
     &:not(.disabled) {
       background: var(--primary-button-background-idle);

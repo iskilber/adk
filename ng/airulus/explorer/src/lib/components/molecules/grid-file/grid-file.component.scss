@@ -1,0 +1,20 @@
+:host {
+  cursor: pointer;
+  display: block;
+
+  &:hover {
+    background: #778eae;
+  }
+}
+.file-name {
+  text-align: center;
+  line-height: 24px;
+  color: white;
+}
+
+.file-created {
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 700;
+}

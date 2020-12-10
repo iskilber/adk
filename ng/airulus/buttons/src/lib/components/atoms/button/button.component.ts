@@ -6,11 +6,11 @@ import {
   } from '@angular/core';
 
 @Component({
-  selector: `button[adk-button], button[adk-primary-button]`,
+  selector: `button[arl-button], button[arl-primary-button]`,
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
 })
-export class ButtonComponent implements OnInit {
+export class AirulusButtonComponent implements OnInit {
 
   @Input()
   public pending: boolean;

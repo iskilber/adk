@@ -1,6 +1,9 @@
-adk-view {
+arl-view {
+  // We want to prevent any unexpected scroll, because all scrolling 
+  // should be handled by widgets or panels inside application.
   height: 100vh;
   width: 100vw;
   overflow: hidden;
   display: block;
+  background: var(--arl-base-background)
 }

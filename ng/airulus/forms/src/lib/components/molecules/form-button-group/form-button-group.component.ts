@@ -10,7 +10,7 @@ import type {
   } from '../../../interfaces';
 
 @Component({
-  selector: 'adk-form-button-group',
+  selector: 'arl-form-button-group',
   templateUrl: './form-button-group.component.html',
   styleUrls: ['./form-button-group.component.scss']
 })

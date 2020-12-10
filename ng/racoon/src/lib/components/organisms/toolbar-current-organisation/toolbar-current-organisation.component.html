@@ -1,0 +1,22 @@
+<arl-toolbar-item 
+  [arlMenuTriggerFor]="menu"
+>
+  <div *ngIf="currentOrganisation.organisation$ | async" 
+    class="row" 
+  >
+    <img [src]="currentOrganisation.organisation.logoUrl" class="organisationLogo"/>
+    <div>
+      {{ currentOrganisation.organisation.name }}
+    </div>
+  </div>
+</arl-toolbar-item>
+<arl-menu #menu>
+  <arl-menu-item *ngFor="let organisation of (currentUser.organisations$ | async)">
+    <div class="row" (click)="handleSelect(organisation)">
+      <img [src]="organisation.logoUrl" class="organisationLogo"/>
+      <div>
+        {{ organisation.name }}
+      </div>
+    </div>
+  </arl-menu-item>
+</arl-menu>

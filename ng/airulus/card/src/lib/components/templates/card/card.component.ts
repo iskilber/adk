@@ -4,7 +4,7 @@ import {
   } from '@angular/core';
 
 @Component({
-  selector: 'adk-card',
+  selector: 'arl-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })

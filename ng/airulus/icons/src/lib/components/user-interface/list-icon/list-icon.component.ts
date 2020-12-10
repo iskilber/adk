@@ -5,10 +5,10 @@ import {
 import { SvgIconComponent } from '../../core';
 
 @Component({
-  selector: 'adk-list-icon',
+  selector: 'arl-list-icon',
   templateUrl: './list-icon.component.svg'
 })
-export class AdkListIconComponent extends SvgIconComponent {
+export class AirulusListIconComponent extends SvgIconComponent {
   @Input()
   public viewType: 'filled' | 'standard' = 'standard';
 }

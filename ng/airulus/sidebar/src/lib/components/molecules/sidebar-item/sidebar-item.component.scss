@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  height: 24px;
+  transition: color 0.15s ease-in-out;
+
+  .label {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  &.active {
+    color: var(--arl-cta-color-active);
+    --arl-svg-icon-color: var(--arl-cta-color-active);
+    background: var(--arl-sidebar-item-active-background);
+  }
+
+  &.cta {
+    cursor: pointer;
+    &:hover {
+      --arl-svg-icon-color: var(--arl-cta-color-hover);
+      color: var(--arl-cta-color-hover);
+    }
+    &:active {
+      --arl-svg-icon-color: var(--arl-cta-color-active);
+      color: var(--arl-cta-color-active);
+    }
+    &:focus {
+      --arl-svg-icon-color: var(--arl-cta-color-active);
+      color: var(--arl-cta-color-active);
+      outline: none;
+    }
+  }
+}

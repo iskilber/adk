@@ -1,0 +1,14 @@
+<arl-view 
+class="drag-overlay"
+contentVerticalPosition="centered"
+contentHorizontalPosition="centered"
+>
+  <div class="drop-area">
+    <arl-add-folder-icon
+      viewType="filled"
+      class="icon"
+    ></arl-add-folder-icon>
+
+    <p *ngIf="message" class="message">{{ message }}</p>
+  </div>
+</arl-view>

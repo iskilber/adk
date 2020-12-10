@@ -1,0 +1,28 @@
+:host {
+  position: absolute;
+
+  &.absolute-positioning {
+    display: grid;
+    height: 100%;
+  }
+
+  &.absolute-vertical-center {
+    align-content: center;
+  }
+  &.absolute-vertical-top {
+    align-content: flex-start;
+  }
+  &.absolute-vertical-bottom {
+    align-content: flex-end;
+  }
+
+  &.absolute-horizontal-center {
+    justify-content: center;
+  }
+  &.absolute-horizontal-left {
+    justify-content: left;
+  }
+  &.absolute-horizontal-right {
+    justify-content: right;
+  }
+}

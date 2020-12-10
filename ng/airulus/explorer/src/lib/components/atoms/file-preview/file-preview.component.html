@@ -1,0 +1,15 @@
+<div
+  *ngIf="!thumbnailLogoUrl || !['image/jpeg', 'image/png', 'image/gif'].includes(mimeType)"
+  class="file-icon"
+>
+  <arl-mime-type-icon
+    viewType="filled"
+    [mimeType]="mimeType"
+  ></arl-mime-type-icon>
+</div>
+
+<img 
+  *ngIf="thumbnailLogoUrl && ['image/jpeg', 'image/png', 'image/gif'].includes(mimeType)" 
+  [src]="thumbnailLogoUrl"
+  class="thumbnail"
+/>

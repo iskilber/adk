@@ -1,0 +1,28 @@
+<ng-template #app>
+  <div class="app-container">
+    <rcn-sidebar
+      (logout)="logout()"
+      [applicationLinks]="applicationLinks$ | async"
+    >
+      <ng-content select="[role=sidebarModules]"></ng-content>
+    </rcn-sidebar>
+
+    <div class="module-container">
+      <rcn-toolbar></rcn-toolbar>
+      <div class="module-content">
+        <ng-content select="[role=content]"></ng-content>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<adk-app-base-view 
+  arlThemes="assets/config/theme-list.json"
+  class="theme"
+>
+  <auth-sso-client 
+    (logout)="handleLogout()"
+    class="sso-container"
+    [authenticatedContent]="app"
+  ></auth-sso-client>  
+</adk-app-base-view>

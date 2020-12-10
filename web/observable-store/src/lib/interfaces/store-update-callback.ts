@@ -1,0 +1,1 @@
+export type IStoreUpdateCallback<S> = (state: S) => S;

@@ -1,5 +1,5 @@
-import { ButtonComponent } from './button/button.component';
+import { AirulusButtonComponent } from './button/button.component';
 
 export const ATOMS = [
-  ButtonComponent
+  AirulusButtonComponent
 ];

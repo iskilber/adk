@@ -1,16 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { COMPONENTS } from './components';
 import { NgModule } from '@angular/core';
+import { PIPES } from './pipes';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   exports: [
-    ...COMPONENTS
+    ...COMPONENTS,
+    ...PIPES
   ],
   declarations: [
-    ...COMPONENTS
+    ...COMPONENTS,
+    ...PIPES
   ],
   providers: [],
 })

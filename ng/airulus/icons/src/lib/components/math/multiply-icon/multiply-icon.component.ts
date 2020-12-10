@@ -5,7 +5,7 @@ import {
 import { SvgIconComponent } from '../../core';
 
 @Component({
-  selector: 'adk-multiply-icon',
+  selector: 'arl-multiply-icon',
   templateUrl: './multiply-icon.component.svg'
 })
 export class MultiplyIconComponent extends SvgIconComponent {

@@ -1,0 +1,15 @@
+<div
+  arlFileDrop
+  [fileAccept]="['text/html']"
+  (documentDragStart)="isDraggingFile = true"
+  (documentDragEnd)="isDraggingFile = false"
+  (dragError)="handleDragError($event)"
+>
+  <ng-content></ng-content>
+
+  <arl-file-drop-area
+    *ngIf="isDraggingFile"
+      [message]="message"
+    >
+  </arl-file-drop-area>
+</div>

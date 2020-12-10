@@ -1,0 +1,33 @@
+<div 
+  class="inner-container"
+  [class.expanded]="isExpanded"
+>
+  <header>
+    <arl-sidebar-separator></arl-sidebar-separator>
+      <arl-sidebar-item (click)="toggle()" class="expand-label">
+        <ng-container role="label">{{ expandLabel }}</ng-container>
+        <ng-container role="icon">
+          <arl-menu-icon 
+            *ngIf="!isExpanded"
+            [cta]="true"
+            viewType="filled"
+          ></arl-menu-icon>
+          <arl-arrow-icon
+            *ngIf="isExpanded"
+            direction="left"
+            [cta]="true"
+            viewType="filled"
+          ></arl-arrow-icon>
+        </ng-container>
+      </arl-sidebar-item>  
+    <arl-sidebar-separator></arl-sidebar-separator>
+  </header>
+
+  <section class="content">
+    <ng-content select="[role=content]"></ng-content>
+  </section>
+  <footer>
+    <ng-content select="[role=footer]"></ng-content>
+  </footer>
+</div>
+

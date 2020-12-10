@@ -1,0 +1,9 @@
+<a [href]="applicationLink.applicationUrl">
+  <arl-sidebar-item [active]="applicationLink | rcnIsApplicationLinkActive">
+    <span role="label">{{ applicationLink.name }}</span>
+    <img [src]="applicationLink.logoUrl" 
+      class="app-logo"
+      role="icon"
+    />
+  </arl-sidebar-item>
+</a>

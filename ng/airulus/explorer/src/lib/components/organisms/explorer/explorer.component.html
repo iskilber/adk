@@ -1,0 +1,20 @@
+<arl-explorer-topbar class="topbar"
+  (changeView)="view = $event"
+></arl-explorer-topbar>
+<arl-explorer-sidebar class="sidebar"></arl-explorer-sidebar>
+
+<arl-explorer-file-uploader
+  class="content"
+  [filesOverviewTemplate]="uploaderFilesOverviewTemplate"
+  [accept]="fileUploaderAccept"
+  (upload)="upload.next($event)"
+>
+  <arl-explorer-grid-view
+    *ngIf="view === 'grid'"
+    [directory]="directory"
+    (selectRecord)="handleSelectRecord($event)"
+  ></arl-explorer-grid-view>
+  <div *ngIf="view === 'list'">
+    LIST
+  </div>
+</arl-explorer-file-uploader>

@@ -1,0 +1,24 @@
+<arl-sidebar
+  expandLabel="menu"
+>
+  <ng-container role="content">
+    <rcn-sidebar-app-item
+      *ngFor="let applicationLink of applicationLinks"
+      [applicationLink]="applicationLink"
+    ></rcn-sidebar-app-item>
+    <ng-content></ng-content>
+  </ng-container>
+
+  <ng-container role="footer">
+    <arl-sidebar-separator></arl-sidebar-separator>
+
+    <arl-sidebar-item (click)="logout.next()">
+      <ng-container role="label">Logout</ng-container>
+      <adk-logout-icon
+        role="icon"
+        [cta]="true"
+        viewType="filled"
+      ></adk-logout-icon>
+    </arl-sidebar-item>
+  </ng-container>
+</arl-sidebar>

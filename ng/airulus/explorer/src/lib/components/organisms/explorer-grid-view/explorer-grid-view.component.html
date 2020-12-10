@@ -1,0 +1,18 @@
+<div
+  [style.height]="'100%'"
+>
+  <arl-view 
+    [verticalScrollable]="true"
+  >
+    <div class="grid">
+      <arl-explorer-grid-file
+        *ngFor="let record of directory.records"
+        (dblclick)="handleSelectRecord(record)"
+        [record]="record"
+      ></arl-explorer-grid-file>
+    </div>
+  </arl-view>
+
+</div>
+
+

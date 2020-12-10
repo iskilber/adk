@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+
+  .heading {
+    display: block;
+    font-size: 24px;
+    color: #fafafa;
+    text-transform: uppercase;
+  }
+}

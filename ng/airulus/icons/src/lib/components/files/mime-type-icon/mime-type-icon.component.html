@@ -1,0 +1,63 @@
+<ng-container [ngSwitch]="mimeType">
+
+  <arl-folder-icon 
+    *ngSwitchCase="'text/directory'"
+    [viewType]="viewType"
+    [title]="title"
+    [color]="color"
+    [size]="size"
+    [spin]="spin"
+    [cta]="cta"
+  ></arl-folder-icon>
+
+  <arl-text-file-icon 
+    *ngSwitchCase="'text/plain'"
+    [viewType]="viewType"
+    [title]="title"
+    [color]="color"
+    [size]="size"
+    [spin]="spin"
+    [cta]="cta"
+  ></arl-text-file-icon>
+
+  <arl-pdf-file-icon 
+    *ngSwitchCase="'application/pdf'"
+    [viewType]="viewType"
+    [title]="title"
+    [color]="color"
+    [size]="size"
+    [spin]="spin"
+    [cta]="cta"
+  ></arl-pdf-file-icon>
+
+  <arl-html-file-icon 
+    *ngSwitchCase="'text/html'"
+    [viewType]="viewType"
+    [title]="title"
+    [color]="color"
+    [size]="size"
+    [spin]="spin"
+    [cta]="cta"
+  ></arl-html-file-icon>
+
+  <arl-ms-word-icon 
+    *ngSwitchCase="'application/vnd'"
+    [viewType]="viewType"
+    [title]="title"
+    [color]="color"
+    [size]="size"
+    [spin]="spin"
+    [cta]="cta"
+  ></arl-ms-word-icon>
+
+  <arl-file-icon 
+    *ngSwitchDefault
+    [viewType]="viewType"
+    [title]="title"
+    [color]="color"
+    [size]="size"
+    [spin]="spin"
+    [cta]="cta"
+  ></arl-file-icon>
+
+</ng-container>

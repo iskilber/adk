@@ -1,0 +1,8 @@
+:host {
+  &.top-border {
+    border-top: 3px solid red;
+  }
+  &.bottom-border {
+    border-bottom: 3px solid red;
+  }
+}

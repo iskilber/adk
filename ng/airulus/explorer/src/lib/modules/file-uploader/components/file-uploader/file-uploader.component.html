@@ -1,0 +1,20 @@
+<div
+  arlFileDrop
+  [fileAccept]="accept"
+  (files)="triggerUploadWizard($event)"
+  (documentDragStart)="isDraggingFile = true"
+  (documentDragEnd)="isDraggingFile = false"
+  [style.height]="'100%'"
+>
+  <ng-content></ng-content>
+
+  <arl-explorer-file-uploader-overlay *ngIf="isDraggingFile">
+    <arl-file-drop-area>
+    </arl-file-drop-area>
+  </arl-explorer-file-uploader-overlay>
+  <arl-explorer-file-uploader-overlay *ngIf="filesToAccept">
+    <ng-container *ngTemplateOutlet="filesOverviewTemplate;context: fileOverviewContext">
+    </ng-container>
+  </arl-explorer-file-uploader-overlay>
+
+</div>

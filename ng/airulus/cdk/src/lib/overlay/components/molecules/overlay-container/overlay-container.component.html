@@ -1,0 +1,7 @@
+<arl-overlay-backdrop *ngIf="backdrop"></arl-overlay-backdrop>
+<arl-overlay-position 
+  [position]="position"
+  (click)="$event.stopPropagation()"
+>
+  <div #anchor></div>
+</arl-overlay-position>

@@ -1,7 +1,7 @@
 :host {
   display: grid;
   grid-template-areas: 
-    'notifbar notifbar'
+    'aside topbar'
     'aside content';
   grid-template-columns: var(--app-aside-width) auto;
   grid-template-rows: 24px auto;
@@ -10,8 +10,8 @@
     grid-area: aside;
   }
 
-  .app-notifbar {
-    grid-area: notifbar;
+  .app-topbar {
+    grid-area: topbar;
   }
 
   .app-content {

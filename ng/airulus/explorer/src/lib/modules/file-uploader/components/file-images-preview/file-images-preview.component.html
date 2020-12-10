@@ -1,0 +1,25 @@
+<arl-view [verticalScrollable]="true">
+  <form [formGroup]="form"
+    (submit)="handleSubmit($event)"
+  >
+    <div class="grid" >
+      <div *ngFor="let control of fileControls">
+        <div class="image-container">
+          <img 
+            [src]=" control.value | arlFileToImage | async" 
+            class="image"
+          />
+        </div>
+        <p class="file-name">{{ control.value.name }}</p>
+      </div>
+    </div>
+    <arl-form-button-group
+      class="form-controls"
+      resetLabel="reset"
+      submitLabel="submit"
+      [submitPending]="pending"
+      [valid]="form.valid"
+    >
+    </arl-form-button-group>
+  </form>
+</arl-view>

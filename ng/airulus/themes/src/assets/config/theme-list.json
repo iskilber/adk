@@ -1,0 +1,12 @@
+{
+  "version": "0.1",
+  "default": "Adk Admin Dark",
+  "items": [
+    {
+      "name": "Adk Admin Dark",
+      "tags": ["dark"],
+      "cssFileUrl": "assets/themes/airulus-admin-dark.theme.css",
+      "cssClassName": "airulus-admin-dark"
+    }
+  ]
+}

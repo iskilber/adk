@@ -1,0 +1,1 @@
+export const HTTP_RACOON_CACHE_HEADER = 'x-racoon-cache';
