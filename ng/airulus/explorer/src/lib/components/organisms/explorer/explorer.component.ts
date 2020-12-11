@@ -1,10 +1,12 @@
+import { AirulusExplorerFileUploaderComponent } from '../../../modules/file-uploader/components/file-uploader/file-uploader.component';
 import {
   Component,
   EventEmitter,
   Input,
   OnInit,
   Output,
-  TemplateRef
+  TemplateRef,
+  ViewChild
   } from '@angular/core';
 import {
   IExplorerDirectory,
@@ -37,11 +39,18 @@ export class AirulusExplorerComponent implements OnInit {
   @Output()
   public upload = new EventEmitter<FormData>();
 
+  @ViewChild(AirulusExplorerFileUploaderComponent)
+  public uploader: AirulusExplorerFileUploaderComponent;
+
   constructor() { }
 
   ngOnInit(): void { }
 
   public handleSelectRecord(record) {
     this.selectRecord.next(record);
+  }
+
+  public closeUploader() {
+    this.uploader.close();
   }
 }

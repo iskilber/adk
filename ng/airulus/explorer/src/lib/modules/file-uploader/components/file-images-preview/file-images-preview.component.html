@@ -1,6 +1,7 @@
 <arl-view [verticalScrollable]="true">
   <form [formGroup]="form"
     (submit)="handleSubmit($event)"
+    (reset)="handleReset($event)"
   >
     <div class="grid" >
       <div *ngFor="let control of fileControls">

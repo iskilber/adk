@@ -11,7 +11,6 @@ import {
   FormControl,
   FormGroup
   } from '@angular/forms';
-import { IImageResolution } from '@airulus/cdk';
 
 @Component({
   selector: 'arl-explorer-file-images-preview',
@@ -30,6 +29,9 @@ export class AirulusExplorerFileImagesPreviewComponent implements OnInit {
   @Output()
   public formSubmit = new EventEmitter<FormData>();
 
+  @Output()
+  public formReset = new EventEmitter<any>();
+
   @Input()
   public maxWidth: number;
 
@@ -47,6 +49,12 @@ export class AirulusExplorerFileImagesPreviewComponent implements OnInit {
 
   public get fileControls(): FormControl[] {
     return (this.form.get('files') as FormArray).controls as FormControl[];
+  }
+
+  public handleReset(event: Event) {
+    event.stopPropagation();
+
+    this.formReset.next();
   }
 
   public handleSubmit(event: Event) {

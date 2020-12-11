@@ -6,7 +6,6 @@ import {
   Output,
   TemplateRef
   } from '@angular/core';
-import { Form } from '@angular/forms';
 import { IAirulusExplorerFileUploaderOverviewContext } from '../../interfaces/files-overview-context.interface';
 import { IAirulusFileDropFilesEvent } from '@adk/ng/airulus/forms';
 
@@ -41,11 +40,16 @@ export class AirulusExplorerFileUploaderComponent implements OnInit {
   public get fileOverviewContext(): IAirulusExplorerFileUploaderOverviewContext {
     return {
       files: this.filesToAccept ? this.filesToAccept.files : [],
-      onSubmit: this.handleSubmit
+      onSubmit: this.handleSubmit,
+      onReset: this.close
     }
   }
 
   public handleSubmit = (data: FormData) => {
     this.upload.next(data);
+  }
+
+  public close = () => {
+    this.filesToAccept = null;
   }
 }
