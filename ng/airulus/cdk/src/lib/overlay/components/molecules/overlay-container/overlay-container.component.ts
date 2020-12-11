@@ -59,12 +59,10 @@ export class AirulusOverlayContainerComponent implements OnInit, OnDestroy {
         this.hostElementRef.nativeElement.classList.add(className);
       });
     }
-    console.log(this.hostView);
-    console.log('INIT AIREMBED CMP');
   }
 
   ngOnDestroy() {
-    console.log('DESTROY EMBED CMP');
+
   }
 }
 

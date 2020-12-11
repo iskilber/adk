@@ -21,28 +21,7 @@ export class AirulusExplorerContentComponent implements OnInit {
     private element: ElementRef
   ) { }
 
-  /*
-  @HostListener('dragenter', ['$event'])
-  public onDragenter(event: Event) {
-    const eventTarget = event.target as HTMLElement;
-    console.log('E',eventTarget);
-    console.log('E', eventTarget === this.element.nativeElement);
-  }
-
-  @HostListener('dragleave', ['$event'])
-  public onDragleave(event: Event) {
-    const eventTarget = event.target as HTMLElement;
-    console.log('L', eventTarget);
-    console.log('L', eventTarget === this.element.nativeElement);
-  }
-  */
-
   ngOnInit(): void {
-    //this.dragenter$ = 
-    /*
-    this.dragover$.subscribe((evt) => {
-      console.log('ENTER', evt);
-    })
-    */
+
   }
 }

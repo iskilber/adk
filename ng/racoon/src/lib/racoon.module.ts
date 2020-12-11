@@ -4,7 +4,7 @@ import { AirulusMenuModule } from '@adk/ng/airulus/menu';
 import { AirulusSidebarModule } from '@adk/ng/airulus/sidebar';
 import { AirulusThemesModule } from '@adk/ng/airulus/themes';
 import { AirulusToolbarModule } from '@adk/ng/airulus/toolbar';
-import { AuthSsoClientModule } from '@adk/auth/sso-client';
+import { AuthSsoClientModule } from '@auth/sso-client';
 import { CommonModule } from '@angular/common';
 import { COMPONENTS } from './components';
 import { HttpClientModule } from '@angular/common/http';

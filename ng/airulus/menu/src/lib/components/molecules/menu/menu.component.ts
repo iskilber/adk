@@ -27,6 +27,6 @@ export class AirulusMenuComponent {
   ) { }
 
   public close() {
-    console.log('CLOSE!');
+
   }
 }

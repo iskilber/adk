@@ -35,15 +35,14 @@ export class AirulusExplorerGridViewComponent implements OnInit {
   ngOnInit(): void { }
 
   public handleDragEnter(event: Event) {
-    console.log('ENTER', this.fileDropTrigger.nativeElement);
     if (event.target === this.fileDropTrigger.nativeElement) {
-      console.log('ENTER', event.target);
+
     }
   }
 
   public handleDragLeave(event: Event) {
     if (event.target === this.fileDropTrigger.nativeElement) {
-      console.log('LEAVE', event.target);
+
     }
   }
 

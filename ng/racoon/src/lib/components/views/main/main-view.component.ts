@@ -1,7 +1,7 @@
 import {
   AuthSsoClientComponent,
   CurrentOrganisationService
-  } from '@adk/auth/sso-client';
+  } from '@auth/sso-client';
 import {
   Component,
   Input,

@@ -57,7 +57,7 @@ export class AirulusMenuTriggerDirective implements OnInit, AfterViewInit, OnDes
   public ngOnInit(
     
   ) {
-    console.log(this.menuCmp);
+
   }
 
   public ngOnDestroy() {

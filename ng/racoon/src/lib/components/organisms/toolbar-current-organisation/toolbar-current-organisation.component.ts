@@ -9,7 +9,7 @@ import { CurrentOrganisationChangedEvent } from '../../../events';
 import {
   CurrentOrganisationService,
   CurrentUserService
-  } from '@adk/auth/sso-client';
+  } from '@auth/sso-client';
 import { RacoonEventBus } from '@racoon/cqrs';
 
 @Component({
@@ -33,7 +33,6 @@ export class RacoonToolbarCurrentOrganisationComponent implements OnInit {
   }
 
   public handleSelect(option) {
-    console.log(option);
     this.menuTrigger.closeMenu();
     this.currentOrganisation.organisation = option;
     this.eventBus.dipatch(new CurrentOrganisationChangedEvent(option));

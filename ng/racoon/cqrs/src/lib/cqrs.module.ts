@@ -21,7 +21,6 @@ export class RacoonCqrsModule {
   constructor(
     private commands: RacoonCommandBus
   ) {
-    console.log(commands);
-    console.log('START RACOON CQRS!!!');
+
   }
 }

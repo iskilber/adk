@@ -32,12 +32,9 @@ export class ResponseMappingInterceptor implements NestInterceptor {
       return Reflect.ownKeys(schema)
       .filter((propKey: string) => data[propKey] !== undefined)
       .reduce((response, propKey) => {
-
-        console.log(propKey);
         const mapper = schema[propKey];
         let value;
         if (typeof mapper === 'function') {
-          console.log(mapper, propKey);
           value = mapper(data[propKey]);
         } else if (Array.isArray(mapper)) {
           value = data[propKey].map((item) => this.parseData(item, mapper[0]));

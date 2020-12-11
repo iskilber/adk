@@ -2,7 +2,7 @@ import {
   Component,
   OnInit
   } from '@angular/core';
-import { CurrentUserService } from '@adk/auth/sso-client';
+import { CurrentUserService } from '@auth/sso-client';
 
 @Component({
   selector: 'rcn-toolbar-current-user',

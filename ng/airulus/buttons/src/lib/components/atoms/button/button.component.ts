@@ -26,6 +26,6 @@ export class AirulusButtonComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void { 
-    console.log('CREATE BUTTON')
+    
   }
 }
