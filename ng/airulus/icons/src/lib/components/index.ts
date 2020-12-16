@@ -1,3 +1,8 @@
+import {
+  AirulusSvgCenteredGroupComponent,
+  AirulusSvgSpinningGroupComponent,
+  SvgIconComponent
+  } from './core';
 import { DATA_ICONS } from './data';
 import { FILE_ICONS } from './files';
 import { FlagIconComponent } from './flag/flag-icon.component';
@@ -8,7 +13,6 @@ import { MESSAGING_ICONS } from './messaging';
 import { NETWORKING_ICONS } from './networking';
 import { PROFILE_ICONS } from './profile';
 import { SECURITY_ICONS } from './security';
-import { SvgIconComponent } from './core';
 import { USER_INTERFACE_ICONS } from './user-interface';
 
 export const COMPONENTS = [
@@ -22,6 +26,8 @@ export const COMPONENTS = [
   ...MATH_ICONS,
   ...MEDIA_ICONS,
   ...FILE_ICONS,
+  AirulusSvgSpinningGroupComponent,
+  AirulusSvgCenteredGroupComponent,
   SvgIconComponent,
   FlagIconComponent
 ];

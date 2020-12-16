@@ -5,4 +5,12 @@
   .view-controls {
     justify-self: end;
   }
+
+  .breadcrumb {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 800;
+    color: white;
+  }
 }

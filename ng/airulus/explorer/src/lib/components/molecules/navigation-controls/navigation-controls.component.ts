@@ -1,6 +1,9 @@
 import {
   Component,
-  OnInit
+  EventEmitter,
+  Input,
+  OnInit,
+  Output
   } from '@angular/core';
 
 @Component({
@@ -9,7 +12,15 @@ import {
   styleUrls: ['./navigation-controls.component.scss']
 })
 export class AirulusExplorerNavigationControlsComponent implements OnInit {
+
+  @Output()
+  public navigateToParent = new EventEmitter<void>();
+
+  @Output()
+  public navigateToHome = new EventEmitter<void>();
+
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+   }
 }

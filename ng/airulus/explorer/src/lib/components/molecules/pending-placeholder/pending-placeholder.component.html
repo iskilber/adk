@@ -1,0 +1,13 @@
+<div
+  [style.height]="'100%'"
+>
+  <arl-view>
+    <div class="grid">
+      <arl-explorer-grid-file
+        *ngFor="let record of placeholders"
+        [record]="record"
+      ></arl-explorer-grid-file>
+    </div>
+  </arl-view>
+
+</div>

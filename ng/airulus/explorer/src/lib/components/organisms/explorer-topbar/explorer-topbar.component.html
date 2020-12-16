@@ -1,6 +1,14 @@
-<arl-explorer-navigation-controls class="navigation"></arl-explorer-navigation-controls>
+<arl-explorer-navigation-controls 
+  class="navigation"
+  (navigateToParent)="navigateToParent.next()"
+  (navigateToHome)="navigateToHome.next()"
+></arl-explorer-navigation-controls>
 <div class="breadcrumb">
-
+  <span *ngFor="let fragment of path; let i = index"
+    (click)="navigateToPath.next(path.slice(0, i + 1).join('/'))"
+  >
+    {{i > 0 ? '/' : ''}} {{ fragment }}
+  </span>
 </div>
 <arl-explorer-view-controls 
   class="view-controls"

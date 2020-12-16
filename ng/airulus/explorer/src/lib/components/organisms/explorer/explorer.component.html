@@ -1,10 +1,20 @@
 <arl-explorer-topbar class="topbar"
+  [path]="path"
   (changeView)="view = $event"
+  (navigateToParent)="navigateToParent.next()"
+  (navigateToHome)="navigateToHome.next()"
+  (navigateToPath)="navigateToPath.next($event)"
 ></arl-explorer-topbar>
 <arl-explorer-sidebar class="sidebar"></arl-explorer-sidebar>
 
+<arl-explorer-pending-placeholder
+  *ngIf="pending"
+  class="content"
+>
+</arl-explorer-pending-placeholder>
 <arl-explorer-file-uploader
   class="content"
+  *ngIf="!pending"
   [filesOverviewTemplate]="uploaderFilesOverviewTemplate"
   [accept]="fileUploaderAccept"
   (upload)="upload.next($event)"

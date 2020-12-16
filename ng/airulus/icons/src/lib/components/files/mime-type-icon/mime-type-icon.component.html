@@ -51,6 +51,16 @@
   ></arl-ms-word-icon>
 
   <arl-file-icon 
+    *ngSwitchCase="'placeholder'"
+    [viewType]="viewType"
+    [title]="title"
+    [color]="color"
+    [size]="size"
+    [spin]="true"
+    [cta]="false"
+  ></arl-file-icon>
+
+  <arl-file-icon 
     *ngSwitchDefault
     [viewType]="viewType"
     [title]="title"

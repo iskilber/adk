@@ -14,5 +14,5 @@ export const ORGANISMS = [
   AirulusExplorerSidebarComponent,
   AirulusExplorerTopbarComponent,
   AirulusExplorerGridViewComponent,
-  AirulusExplorerContentComponent
+  AirulusExplorerContentComponent,
 ];

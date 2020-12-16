@@ -33,11 +33,26 @@ export class AirulusExplorerComponent implements OnInit {
   @Input()
   public directory: IExplorerDirectory;
 
+  @Input()
+  public pending: boolean;
+
+  @Input()
+  public path: string;
+
+  @Output()
+  public navigateToParent = new EventEmitter();
+
   @Output()
   public selectRecord = new EventEmitter<IExplorerDirectoryRecord>();
 
   @Output()
   public upload = new EventEmitter<FormData>();
+
+  @Output()
+  public navigateToHome = new EventEmitter<void>();
+
+  @Output()
+  public navigateToPath = new EventEmitter<string>();
 
   @ViewChild(AirulusExplorerFileUploaderComponent)
   public uploader: AirulusExplorerFileUploaderComponent;

@@ -1,6 +1,7 @@
 import {
   Component,
   EventEmitter,
+  Input,
   OnInit,
   Output
   } from '@angular/core';
@@ -12,8 +13,20 @@ import {
 })
 export class AirulusExplorerTopbarComponent implements OnInit {
 
+  @Input()
+  public path: string[];
+
   @Output()
   public changeView = new EventEmitter<string>();
+
+  @Output()
+  public navigateToParent = new EventEmitter<void>();
+
+  @Output()
+  public navigateToHome = new EventEmitter<void>();
+
+  @Output()
+  public navigateToPath = new EventEmitter<string>();
 
   constructor() { }
 
