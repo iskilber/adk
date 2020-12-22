@@ -5,6 +5,7 @@
   padding: 12px;
   height: 24px;
   transition: color 0.15s ease-in-out;
+  color: var(--arl-sidebar-foreground);
 
   .label {
     text-transform: uppercase;
@@ -21,8 +22,8 @@
   &.cta {
     cursor: pointer;
     &:hover {
-      --arl-svg-icon-color: var(--arl-cta-color-hover);
-      color: var(--arl-cta-color-hover);
+      --arl-svg-icon-color: var(--arl-sidebar-hover-color);
+      color: var(--arl-sidebar-hover-color);
     }
     &:active {
       --arl-svg-icon-color: var(--arl-cta-color-active);

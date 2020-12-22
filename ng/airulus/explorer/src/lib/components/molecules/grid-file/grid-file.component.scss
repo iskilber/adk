@@ -1,15 +1,14 @@
 :host {
   cursor: pointer;
   display: block;
+  padding: 6px;
 
   &:hover {
-    background: #778eae;
+    background: #f3f3f3;
   }
 }
 .file-name {
   text-align: center;
-  line-height: 24px;
-  color: white;
 }
 
 .file-created {

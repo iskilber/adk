@@ -1,6 +1,7 @@
 import {
   Component,
-  OnInit
+  HostBinding,
+  Input
   } from '@angular/core';
 
 @Component({
@@ -8,8 +9,13 @@ import {
   templateUrl: './toolbar-item.component.html',
   styleUrls: ['./toolbar-item.component.scss']
 })
-export class ToolbarItemComponent implements OnInit {
-  constructor() { }
+export class ToolbarItemComponent {
 
-  ngOnInit(): void { }
+  @Input()
+  public cta: boolean;
+
+  @HostBinding('class.cta')
+  public get isCta() {
+    return this.cta
+  }
 }

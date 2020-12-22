@@ -1,6 +1,6 @@
 :host {
   display: block;
-  background: #0f1216;
+  background: var(--arl-sidebar-foreground);
   height: 1px;
-  border-bottom: 1px solid #252c35;
+  border-bottom: 1px solid var(--arl-sidebar-foreground);
 }

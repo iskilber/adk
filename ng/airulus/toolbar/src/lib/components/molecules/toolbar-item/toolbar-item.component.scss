@@ -4,4 +4,10 @@
   height: 24px;
   font-size: 14px;
   padding: 0 12px;
+  color: var(--arl-toolbar-foreground);
+
+  &.cta:hover {
+    background: var(--arl-toolbar-foreground);
+    color: var(--arl-toolbar-background);
+  }
 }

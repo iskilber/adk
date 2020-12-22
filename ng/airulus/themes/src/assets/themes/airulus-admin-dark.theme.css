@@ -3,20 +3,31 @@
   --arl-color-grey-dark: #353c45;
   --arl-color-blue-grey: #2a313b;
   --arl-color-green-dark: #6d9a5c;
+  --arl-color-red-dark: #A4373A;
+  --arl-color-red-light: #c6888a;
+  --arl-color-white-dark: #F3F3F3;
+  --arl-color-white: #ffffff;
 
   --arl-base-font-family: 'ubuntu';
   --arl-base-font-size: 14px;
   --arl-base-text-color:#474d55;
 
+  --arl-typography-text-color: #4444444;
+  --arl-typography-text-font-family: 'ubuntu';
+  --arl-typography-text-line-height: 24px;
+  --arl-typography-text-font-size: 16px;
+
   --arl-cta-color-hover: #e6e6e6;
   --arl-cta-color-active: #fafafa;
-  --arl-svg-icon-color: var(--arl-base-text-color);
+  --arl-svg-icon-color: var(--arl-color-red-light);
   --arl-svg-icon-size: 24px;
 
-  --arl-base-background: var(--arl-color-blue-grey);
-  --arl-login-background: var(--arl-color-blue-dark);
+  --arl-base-background: var(--arl-color-white-dark);
+  --arl-login-background: var(--arl-color-white-dark);
 
-  --arl-sidebar-background: var(--arl-color-blue-dark);
+  --arl-sidebar-background: var(--arl-color-red-dark);
+  --arl-sidebar-foreground: var(--arl-color-white-dark);
+  --arl-sidebar-hover-color: var(--arl-color-white);
   --arl-sidebar-icon-size: 48px;
   --arl-sidebar-item-active-background: var(--arl-color-green-dark);
   --arl-sidebar-border-active-color: #7cba63;
@@ -24,7 +35,10 @@
   --arl-sidebar-min-width: 48px;
   --arl-sidebar-expand-label-color: --arl-base-text-color;
 
-  --arl-card-background: var(--arl-color-blue-dark);
+  --arl-toolbar-background: var(--arl-color-red-dark);
+  --arl-toolbar-foreground: var(--arl-color-white-dark);
+
+  --arl-card-background: var(--arl-color-white);
 
   --arl-widget-header-background: var(--arl-color-blue-dark);
   --arl-widget-header-font-size: 18px;

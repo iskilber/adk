@@ -1,5 +1,7 @@
 :host {
   --arl-sidebar-transition-duration: 0.15s;
+  --arl-svg-icon-color: var(--arl-sidebar-foreground);
+
   background: var(--arl-sidebar-background);
   display: block;
   height: 100%;
@@ -33,7 +35,6 @@
   }
 
   .expand-label {
-    --arl-svg-icon-color: var(--arl-sidebar-expand-label-color);
-    color: var(--arl-sidebar-expand-label-color);
+    color: var(--arl-sidebar-foreground);
   }
 }

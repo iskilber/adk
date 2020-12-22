@@ -2,6 +2,7 @@ import { AirulusCommonModule } from './common';
 import { AirulusFilesModule } from './files';
 import { AirulusOverlayModule } from './overlay';
 import { AirulusPortalModule } from './portal';
+import { AirulusTypographyModule } from './typography';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
@@ -12,12 +13,14 @@ import { NgModule } from '@angular/core';
     AirulusCommonModule,
     AirulusPortalModule,
     AirulusOverlayModule,
-    AirulusFilesModule
+    AirulusFilesModule,
+    AirulusTypographyModule
   ],
   exports: [
     AirulusPortalModule,
     AirulusOverlayModule,
-    AirulusFilesModule
+    AirulusFilesModule,
+    AirulusTypographyModule
   ],
   providers: [],
 })

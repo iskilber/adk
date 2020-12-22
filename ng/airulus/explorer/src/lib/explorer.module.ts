@@ -1,3 +1,4 @@
+import { AirulusCdkModule } from '../../../cdk/src/lib';
 import { AirulusExplorerCommonModule } from './modules/common';
 import { AirulusExplorerFileUploaderModule } from './modules';
 import { AirulusFormsModule } from '@adk/ng/airulus/forms';
@@ -10,6 +11,7 @@ import { NgModule } from '@angular/core';
 @NgModule({
   imports: [
     CommonModule,
+    AirulusCdkModule,
     AirulusIconsModule,
     AirulusLayoutsModule,
     AirulusFormsModule,
